@@ -10,8 +10,11 @@ class KnightRider
   end
 
   def total_payroll
-    @characters
-    binding.pry
+    @characters.map do |name|
+      name.salary
+    end.sum
   end
+
+  
 
 end
