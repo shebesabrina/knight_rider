@@ -15,6 +15,10 @@ class KnightRider
     end.sum
   end
 
-  
+  def highest_grossing_actor
+    @characters.max_by do |name|
+      name.salary
+    end
+  end
 
 end
